@@ -1,0 +1,29 @@
+[
+    {
+        "_id": 1,
+        "_mail": "juanpigonzalez72@gmail.com",
+        "_sabor": "chocolate",
+        "_tipo": "Crema",
+        "_cantidad": "5",
+        "_fecha": "2024-05-f 19:31:43",
+        "_numeroPedido": 37
+    },
+    {
+        "_id": 2,
+        "_mail": "juanpigonzalez72@gmail.com",
+        "_sabor": "chocolate",
+        "_tipo": "Crema",
+        "_cantidad": "5",
+        "_fecha": "2024-05-f 19:49:50",
+        "_numeroPedido": 295
+    },
+    {
+        "_id": 3,
+        "_mail": "juanpigonzalez72@gmail.com",
+        "_sabor": "chocolate",
+        "_tipo": "Crema",
+        "_cantidad": "5",
+        "_fecha": "2024-05-f 19:50:25",
+        "_numeroPedido": 870
+    }
+]

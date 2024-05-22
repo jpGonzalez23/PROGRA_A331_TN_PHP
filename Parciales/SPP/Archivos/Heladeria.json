@@ -1,0 +1,26 @@
+[
+    {
+        "_id": 1,
+        "_sabor": "chocolate",
+        "_precio": "250",
+        "_tipo": "Crema",
+        "_vaso": "plastico",
+        "_stock": "60"
+    },
+    {
+        "_id": 2,
+        "_sabor": "frutilla",
+        "_precio": "300",
+        "_tipo": "Agua",
+        "_vaso": "Cucurucho",
+        "_stock": "100"
+    },
+    {
+        "_id": 4,
+        "_sabor": "vainilla",
+        "_precio": "360",
+        "_tipo": "Agua",
+        "_vaso": "Cucurucho",
+        "_stock": "100"
+    }
+]
