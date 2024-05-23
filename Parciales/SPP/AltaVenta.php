@@ -7,6 +7,7 @@ $mail = $_POST['mail'];
 $sabor = $_POST['sabor'];
 $tipo = $_POST['tipo'];
 $cantidad = $_POST['cantidad'];
+$imagen = $_FILES['imagen'];
 
 $helado = Helado::BuscarStockHelado($sabor, $tipo, 'Heladeria.json');
 
@@ -29,11 +30,13 @@ if($helado) {
     echo 'El helado no existe';
 }
 
-$rutaCarpeta = 'ImagenesDeLaVenta/2024/';
+$rutaCarpeta = './ImagenesDeLaVenta/2024/';
 
-$nombreImagen = $sabor . '-' . $tipo . '-' . $mail . '-' . date('Ymd_His') . 'jpg';
+$extension = pathinfo($imagen['name'], PATHINFO_EXTENSION);
 
-if (move_uploaded_file($_FILES['imagenes']['tmp_name'], $rutaCarpeta . $nombreImagen)) {
+$nombreImagen = $sabor . ' - ' . $tipo . ' - ' . $mail . ' - ' . date('Ymd_His') . $extension;
+
+if (move_uploaded_file($_FILES['imagen']['tmp_name'], $rutaCarpeta . $nombreImagen)) {
     echo "Imagen guardada con exito";
 } else {
     echo "Error al guardar";

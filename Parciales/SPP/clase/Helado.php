@@ -132,7 +132,7 @@ class Helado {
     }
 
     public function GuardarImagen($imagen) {
-        $directorio = './ImagenesDeHelados/2024';
+        $directorio = './ImagenesDeHelados/2024/';
 
         if(!file_exists($directorio)) {
             mkdir($directorio, 0777, true);
@@ -207,3 +207,4 @@ class Helado {
         return false;
     }
 }
+

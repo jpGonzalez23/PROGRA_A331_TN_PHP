@@ -15,7 +15,7 @@ class Venta {
         $this->_tipo = $tipo;
         $this->_cantidad = $cantidad;
         $this->_id = self::GenerarId();
-        $this->_fecha = date('Y-m-f H:i:s');
+        $this->_fecha = date('Y-m-d H:i:s');
         $this->_numeroPedido = self::GenerarNumeroPedido();
     }
 
@@ -38,7 +38,7 @@ class Venta {
     }
 
     public static function LeerVentas($archivo) {
-        if(file_exists($archivo)) {
+        if (file_exists($archivo)) {
             $contenido = file_get_contents($archivo);
             return json_decode($contenido, true);
         }
@@ -73,5 +73,10 @@ class Venta {
         } else {
             return $mail;
         }
+    }
+
+
+    public static function ConsultaVentas($mail, $fecha, $fechaInicio, $fechaFin) {
+
     }
 }
